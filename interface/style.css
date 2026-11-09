@@ -1,0 +1,67 @@
+/* --- * { box-sizing: border-box; margin: 0; padding: 0; }:
+
+El asterisco (*) significa "a todo el documento". Esto limpia los espacios y márgenes automáticos que los navegadores ponen por defecto, dándote un lienzo limpio para diseñar.--- */
+* {
+    box-sizing: border-box; /* Hace que los bordes y el relleno se incluyan dentro del ancho total de las cajas sin descontrolarse */
+    margin: 0; /* Elimina el margen exterior que traen los navegadores por defecto */
+    padding:0; /* Elimina el relleno interior por defecto */
+}
+/* Estilos globales para la estructura principal de la página (el cuerpo) */
+body {
+    font-family: arial, sans-serif; /* Define la tipografía de letra estándar para toda la aplicación */
+    background-color: #eef2f7; /* Coloca un color de fondo gris suave y moderno detrás de la app */
+    color: #333333; /* Establece el color de texto general en un gris oscuro muy legible */
+    display: flex;  /* Activa Flexbox para poder alinear y centrar los elementos con facilidad */
+    justify-content: center; /* Centra la aplicación horizontalmente en la mitad de la pantalla */
+    align-items: center; /* Centra la aplicación verticalmente en la pantalla */
+    min-height: 100vh;  /* Hace que el cuerpo ocupe como mínimo el 100% de la altura visible de la pantalla */
+}
+
+
+/* --- LA CAJA PRINCIPAL (Contenedor tipo App) --- */
+/* Estilos de la caja contenedora general que simula ser la pantalla del celular o tarjeta web */
+.app-container {
+    width: 100%; /* Hace que la caja ocupe el 100% del ancho disponible */
+    max-width: 420px; /* Limita el ancho máximo a 420 píxeles para que se vea como un celular elegante en computadores */
+    background-color: #ffffff; /* Le da un fondo blanco puro a la interfaz de la aplicación */
+    min-height: 100hv; /* Asegura que la app ocupe al menos toda la altura de la pantalla verticalmente */
+    display: flex; /* Activa Flexbox en la caja principal */
+    flex-direction: column;  /* ¡La clave maestra! Obliga a que todos los elementos hijos bajen estrictamente en columna uno debajo del otro */
+    justify-content: space-between; /* Separa los elementos internos empujando la cabecera arriba y la navegación abajo */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Agrega una sombra difuminada y elegante alrededor de la caja de la app */
+    position: relative; /* Posicionamiento relativo para controlar elementos flotantes internos si es necesario */
+} 
+
+/* Contenedor específico para agrupar el icono del logo y el título de texto */
+.logo-area {
+    display: flex; /* Activa Flexbox para poner la "E" y la palabra EUDAIMON lado a lado */
+    align-items: center; /* Alinea los elementos internos verticalmente al centro */
+    gap: 10px; /* Crea un espacio de separación de 10 píxeles entre el logo y el texto */
+}
+
+/* Estilos para la letra "E" estilizada del logotipo */
+.app-logo { 
+    background-color: #111111; /* Le da un fondo negro muy minimalista y moderno */
+    color: #ffffff; /* Pone el color de la letra "E" en blanco */
+    font-weight: bold; /* Aplica negrita al texto */
+    width: 32px; /* Define un ancho fijo de 32 píxeles para que sea un cuadrado perfecto */
+    height: 32px; /* Define una altura fija de 32 píxeles */
+    display: flex;/* Activa Flexbox para centrar la letra "E" exactamente en el medio de su cajita */
+    justify-content: center;/* Activa Flexbox para centrar la letra "E" exactamente en el medio de su cajita */
+    align-items: center;/* Activa Flexbox para centrar la letra "E" exactamente en el medio de su cajita */
+    border-radius: 8px; /* Redondea sutilmente las esquinas de la caja del logo (borde redondeado de 8px) */
+}
+/* Estilos para el texto del título "EUDAIMON" en la cabecera */
+.app-title {
+    font-weight: bold; /* Pone el texto en negrita */
+    font-size: 16px; /* Define el tamaño de la letra en 16 píxeles */
+    letter-spacing: 1px; /* Separa un poquito más las letras entre sí para darle un toque más profesional */
+}
+
+/* Estilos para el botón interactivo de la campanita de notificaciones */
+.icon-btn {
+    background: none; /* Le quita cualquier fondo por defecto de los botones del navegador */
+    border: none; /* Le quita los bordes predeterminados */
+    font-size: 20px; /* Aumenta el tamaño del icono (emoji de campana) a 20 píxeles */
+    cursor: pointer; /* Cambia el cursor a una manita cuando el usuario pasa el mouse por encima */
+}

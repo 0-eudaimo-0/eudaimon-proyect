@@ -1,5 +1,5 @@
 <!-- Le avisa al navegador que esta página está escrita en la versión más moderna de HTML (HTML5).-->
-<DOCTYPE HTML>
+<!DOCTYPE HTML>
 
      <!-- Es la etiqueta raíz que encierra toda la página. El lang="es" le indica al navegador que el idioma principal es el español. -->
     <HTML LANG="es">
@@ -11,6 +11,7 @@
          <!-- ¡Esta es la clave para que sea multiplataforma! Le dice al celular y al computador que ajusten el tamaño de la pantalla automáticamente según el dispositivo donde se abra. -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EUDAIMONAPP</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
@@ -21,7 +22,7 @@
             <header class="app-header">
                 <div class="logo-area"> 
                     <span class="app-logo">E</span>
-                    <span class="app-tittle">EUDAIMON</span>
+                    <span class="app-title">EUDAIMON</span>
                 </div>
 
                 <!-- Botón de notificaciones -->
@@ -38,9 +39,9 @@
 
         <!-- 1. Saludo personalizado -->
           <!-- Significa "sección" o bloque temático. Es como abrir un capítulo en un libro. En este caso, creamos una sección exclusiva para el saludo inicial. -->
-            <section class="welcome-selection">
+            <section class="welcome-section">
                 <h1>Hola, Michael</h1>
-            </selection>
+            </section>
 
             <!-- 2. Tarjeta de Resumen Mensual -->
             <section class="card-summary-card">
@@ -51,12 +52,12 @@
                     <span class="arrow">›</span>
                 </div>
 
-                <div class="summary-body"></div>
+                <div class="summary-body">
                 <!-- Porcentaje de gasto -->
                 <div class="progress-circle">
                     <span class="porcentage">68%</span>
                     <span class="label">Gastado</span>
-
+                </div>
                   <!-- Detalles numéricos --> 
                 <div class="summary-details">
                     <p class="budget-text">Presupuesto Gastado:</p>
@@ -135,11 +136,32 @@
                 <span class="nav-icon">🏠</span>
                 <span class="nav-label">Inicio</span>
             </a>
+            
+            <!-- Botón 2: Registro -->
+            <a href="#registro" class="nav-item">
+                <span class="nav-icon">📋</span>
+                <span class="nav-label">Registro</span>
+            </a>
 
+             <!-- BOTÓN FLOTANTE CENTRAL (+): Para agregar nuevo movimiento -->
+              <!-- En diseño de aplicaciones móviles, FAB significa Floating Action Button (Botón de Acción Flotante). Es ese botón circular que sobresale en la parte central inferior de las mejores apps para llamar la atención del usuario hacia la acción principal (en Eudaimon, registrar un gasto nuevo de forma inmediata). -->
+            <div class=" nav-fab-container">
+                <button class="fab-btn" aria-label="Nuevo Gasto y Registro">+</button>
+            </div> 
 
+             <!-- Botón 3: Informes -->
+            <a href="#informes" class="nav-item">
+                <span class="nav-icon">📈</span>
+                <span class="nav-label">Informes</span>
+            </a>
+
+            <!-- Botón 4: Perfil -->
+            <a href="#perfil" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span class="nav-label">Perfil</span>
+            </a>
         </nav>     
 
         </div>
     </body>
     </HTML>
-</DOCTYPE>
