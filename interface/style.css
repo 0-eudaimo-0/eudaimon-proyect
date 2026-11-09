@@ -65,3 +65,65 @@ body {
     font-size: 20px; /* Aumenta el tamaño del icono (emoji de campana) a 20 píxeles */
     cursor: pointer; /* Cambia el cursor a una manita cuando el usuario pasa el mouse por encima */
 }
+
+/* --- CONTENIDO PRINCIPAL Y SECCIONES --- */
+
+/* Estilos para el contenedor central que almacena todas las secciones de la app */
+.app-content {
+    padding: 0 20px 20px 20px;  /* Relleno interior de 20 píxeles a los lados y abajo para que nada quede pegado a los bordes */
+    display: flex; /* Activa Flexbox para organizar todo el contenido en columna vertical */
+    flex-direction: column; /* Activa Flexbox para organizar todo el contenido en columna vertical */
+    gap: 20px; /* Deja un espacio automático de 20 píxeles entre cada tarjeta o sección */
+}
+
+/* Estilos para la sección de bienvenida ("Hola, Michael") */
+.welcome-section{
+    margin-top: 10px; /* Agrega un pequeño margen superior para separarlo del encabezado */
+}
+
+/* Estilos para el tamaño de letra del saludo */
+.welcome-section h1 {
+    font-size: 22px; 
+    font-weight: bold;
+    color: #111111
+}
+
+/* --- ESTILO GENERAL DE LAS TARJETAS (.card) --- */
+
+/* Estilo base para todas las cajas o tarjetas contenedoras de información */
+.card {
+    background-color: #f8fafc; /* Fondo blanco puro para que resalte sobre el fondo de la app */
+    border: 1px solid #e2e8f0; /* Borde sutil y elegante alrededor de la tarjeta */
+    padding: 18px; /* Relleno interior para que los textos no toquen los bordes de la tarjeta */
+    border-radius: 14px; /* Redondea las esquinas de la tarjeta suavemente (14 píxeles) */
+}
+
+/* Encabezado interno de las tarjetas (donde va el título de la tarjeta y la flecha ›) */
+.card-header {
+    display: flex; /* Activa Flexbox para poner el título a la izquierda y la flecha a la derecha */
+    justify-content: space-between; /* Activa Flexbox para poner el título a la izquierda y la flecha a la derecha */
+    align-items: center;/* Activa Flexbox para poner el título a la izquierda y la flecha a la derecha */
+    margin-bottom: 12px; /* Espacio de separación inferior respecto al contenido de la tarjeta */
+}
+
+/* Estilos para el título de las tarjetas (ej: "Resumen Mensual" o "Gastos Recientes") */
+.card-header h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Estilo para la flecha indicadora › */
+.card-header .arrow {
+    font-size: 18px;
+    color: #a0aec0;
+}
+
+/* --- TARJETA DE RESUMEN MENSUAL --- */
+
+/* Contenedor interno del cuerpo del resumen mensual */
+.summary-body {
+    display: flex; /* Activa Flexbox para acomodar el círculo de porcentaje y los textos lado a lado */
+    align-items: center; /* Activa Flexbox para acomodar el círculo de porcentaje y los textos lado a lado */
+    gap: 15px; /* Separa el círculo de progreso de los textos numéricos por 15 píxeles */
+}
