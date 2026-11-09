@@ -1,0 +1,145 @@
+<!-- Le avisa al navegador que esta página está escrita en la versión más moderna de HTML (HTML5).-->
+<DOCTYPE HTML>
+
+     <!-- Es la etiqueta raíz que encierra toda la página. El lang="es" le indica al navegador que el idioma principal es el español. -->
+    <HTML LANG="es">
+    <head>
+
+         <!-- Sirve para que el computador entienda las tildes, la letra "ñ" y caracteres especiales sin que salgan símbolos raros. -->
+        <meta charset="UTF-8">
+
+         <!-- ¡Esta es la clave para que sea multiplataforma! Le dice al celular y al computador que ajusten el tamaño de la pantalla automáticamente según el dispositivo donde se abra. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EUDAIMONAPP</title>
+    </head>
+    <body>
+
+        <!-- CAJA 1: La caja principal que contendrá toda la app -->
+        <div class="app-container">
+
+            <!-- Nombre y Logo -->
+            <header class="app-header">
+                <div class="logo-area"> 
+                    <span class="app-logo">E</span>
+                    <span class="app-tittle">EUDAIMON</span>
+                </div>
+
+                <!-- Botón de notificaciones -->
+                <div class="header-actions">
+                    <button class="icon-btn">🔔</button>
+                </div>
+            </header>
+
+       <!-- PARTE B: El contenido principal de la app -->
+        <!--¿Qué es? Es una etiqueta semántica de HTML5 que le dice al navegador: "Todo lo que esté aquí adentro es el contenido central de la aplicación".
+
+        Sirve para separar lo que cambia en la pantalla (como las finanzas o saldos) de las barras fijas (como la cabecera arriba o los botones de abajo). -->
+             <main class="app-content">
+
+        <!-- 1. Saludo personalizado -->
+          <!-- Significa "sección" o bloque temático. Es como abrir un capítulo en un libro. En este caso, creamos una sección exclusiva para el saludo inicial. -->
+            <section class="welcome-selection">
+                <h1>Hola, Michael</h1>
+            </selection>
+
+            <!-- 2. Tarjeta de Resumen Mensual -->
+            <section class="card-summary-card">
+                <div class="card-header">
+                    <h2>Resumen Mensual: Octubre 2026</h2>
+
+                     <!-- ¿Qué es <span>? Es una etiqueta para envolver pedacitos de texto sueltos. Usamos <span> cuando queremos cambiar el color o el tamaño de una sola letra o palabra (por ejemplo, para que la "E" de Eudaimon se vea más grande o bonita después).-->
+                    <span class="arrow">›</span>
+                </div>
+
+                <div class="summary-body"></div>
+                <!-- Porcentaje de gasto -->
+                <div class="progress-circle">
+                    <span class="porcentage">68%</span>
+                    <span class="label">Gastado</span>
+
+                  <!-- Detalles numéricos --> 
+                <div class="summary-details">
+                    <p class="budget-text">Presupuesto Gastado:</p>
+                    <p class="budget-values"><strong>$2,142,000</strong>/ $3,150,000 COP</p>
+                    <p class="remaining-text">Restante:<span>$1,008,000 COP</span></p>
+                </div>  
+                </div>
+            </section>
+
+             <!-- 3. Sección de Métricas Financieras (Saldo y Gastos) -->
+             <section class="financial-metrics">
+
+                <!-- Tarjeta de Saldo Disponible -->
+                 <div class="metric-card">
+                    <span class="metric-label">Gastos Totales Octubre:  </span>
+                    <span class="metric-value-negative">$2,142,000 COP</span>
+                 </div>
+             </section>
+
+             <!-- 4. Sección de Gastos Recientes -->
+            <section class="card-transactions-card">
+                <div class="card-header">
+                    <h2>Gastos Recientes</h2>
+                    <span class="arrow">›</span>
+                </div>
+
+                <!-- Lista de transacciones -->
+                 <ul class="transaction-list">
+
+                    <!-- Movimiento 1: Mercado -->
+                    <li class="transaction-item">
+                        <div class="item-info">
+                            <span class="item-icon">🛒</span>
+                            <div class="item-text">
+                                <strong>Alimentacion (Mercado D1)       </strong>
+                                <small> Oct 21</small>
+                            </div>
+                        </div>
+                        <span class="amount-negative">-$185,000</span>
+                    </li>
+
+                    <!-- Movimiento 2: Gasolina -->
+                     <li class="transaction-item">
+                        <div class="item-info">
+                            <span class="item-icon">🏍️</span>
+                            <div class="item-text">
+                                <strong>Transporte (Combustible Moto)</strong>
+                                <small>Oct 20</small>
+                            </div>
+                        </div>
+                        <span class="amount-negative">-$75,000</span>
+                     </li>
+
+                     <!-- Movimiento 3: Sueldo (Ingreso) -->
+                      <li class="transaction-item">
+                        <div class="item-info">
+                            <span class="item-icon">💰</span>
+                            <div class="item-text">
+                                <strong>Sueldo (Ingreso)</strong>
+                                <small>Oct 19</small>
+                            </div>    
+                        </div>
+                        <span class="amount-positive">+$3,500,000</span>
+                      </li>
+                 </ul>
+            </section>
+             </main>
+
+         <!-- PARTE C: Barra de Navegación Inferior (Footer / Nav) -->
+          <!--Es la etiqueta semántica de HTML5 destinada específicamente a albergar los menús de navegación de una página web.-->    
+        <nav class="bottom-nav">
+
+            <!-- Botón 1: Inicio -->
+            <!-- Es la etiqueta de hipervínculo (anchor), utilizada para crear enlaces que llevan a otras secciones o páginas. Le ponemos la clase active al enlace de "Inicio" para indicar visualmente que el usuario se encuentra actualmente en esta pantalla. -->
+            <a href="#inicio" class="nav-item-active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Inicio</span>
+            </a>
+
+
+        </nav>     
+
+        </div>
+    </body>
+    </HTML>
+</DOCTYPE>
