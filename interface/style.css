@@ -127,3 +127,36 @@ body {
     align-items: center; /* Activa Flexbox para acomodar el círculo de porcentaje y los textos lado a lado */
     gap: 15px; /* Separa el círculo de progreso de los textos numéricos por 15 píxeles */
 }
+
+/* Círculo visual simulado para mostrar el porcentaje gastado (68%) */
+.progress-circle {
+   width: 75px;  /* Define un ancho fijo de 75 píxeles */
+   height: 75px;  /* Define una altura fija de 75 píxeles para que sea un círculo perfecto */
+   background-color: #edf2f7; /* Fondo con un tono azulado/gris muy suave */
+   border-radius: 50%;     /* Vuelve la caja completamente circular */
+   display: flex;     /* Activa Flexbox para centrar perfectamente los textos de adentro */
+   flex-direction: column;     /* Activa Flexbox para centrar perfectamente los textos de adentro */
+   justify-content: center;     /* Activa Flexbox para centrar perfectamente los textos de adentro */
+   align-items: center;     /* Activa Flexbox para centrar perfectamente los textos de adentro */
+}
+
+/* Estilos para el texto del porcentaje (68%) */
+.progress-circle .percentage {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+/* Estilos para la etiqueta pequeña debajo del porcentaje ("Gastado") */
+.progress-circle .label{
+    font-size: 11px;
+    color: #718096; 
+}
+
+/* Contenedor para los detalles numéricos del presupuesto (dinero gastado y restante) */
+.summary-details {
+    display: flex;  /* Hace que ocupe el espacio flexible restante al lado del círculo */
+    flex-direction: column; /* Hace que ocupe el espacio flexible restante al lado del círculo */
+    gap: 4px;  /* Espacio de separación de 4 píxeles entre cada línea de texto de los montos */
+
+}
