@@ -24,7 +24,7 @@ body {
     width: 100%; /* Hace que la caja ocupe el 100% del ancho disponible */
     max-width: 420px; /* Limita el ancho máximo a 420 píxeles para que se vea como un celular elegante en computadores */
     background-color: #ffffff; /* Le da un fondo blanco puro a la interfaz de la aplicación */
-    min-height: 100hv; /* Asegura que la app ocupe al menos toda la altura de la pantalla verticalmente */
+    min-height: 100vh; /* Asegura que la app ocupe al menos toda la altura de la pantalla verticalmente */
     display: flex; /* Activa Flexbox en la caja principal */
     flex-direction: column;  /* ¡La clave maestra! Obliga a que todos los elementos hijos bajen estrictamente en columna uno debajo del otro */
     justify-content: space-between; /* Separa los elementos internos empujando la cabecera arriba y la navegación abajo */
@@ -85,7 +85,7 @@ body {
 .welcome-section h1 {
     font-size: 22px; 
     font-weight: bold;
-    color: #111111
+    color: #111111;
 }
 
 /* --- ESTILO GENERAL DE LAS TARJETAS (.card) --- */
@@ -158,5 +158,28 @@ body {
     display: flex;  /* Hace que ocupe el espacio flexible restante al lado del círculo */
     flex-direction: column; /* Hace que ocupe el espacio flexible restante al lado del círculo */
     gap: 4px;  /* Espacio de separación de 4 píxeles entre cada línea de texto de los montos */
+}
 
+/* Estilo para el texto explicativo ("Presupuesto Gastado:") */
+.budget-text {
+    font-size: 12px;
+    color:#718096;
+}
+
+/* Estilo para los valores en dinero (ej: $2,142,000 / $3,150,000 COP) */
+.budget-values {
+    font-size: 13px;
+    color: #2d3748;
+}
+
+/* Estilo para el texto del dinero restante */
+.remaining-text {
+    font-size: 12px;
+    color: #718096;
+}
+
+/* Estilo exclusivo para resaltar la cifra de dinero restante en color verde oscuro */
+.remaining-text span { 
+    font-weight: bold;
+    color: #38a169;
 }
